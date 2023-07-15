@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VP Confessions</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script type="text/javascript">
+	function sendEmail() {
+	Email.send({
+		SecureToken : "5a65d30c-3209-45e3-b38b-7d04725f0c8a",
+		To: 'vpbmtemails@gmail.com',
+		From: "vpbaramaticonfessions@gmail.com",
+		Subject: "Confession Received",
+		Body: "Class : "+document.getElementById("name").value
+                +"<br> Message : "+document.getElementById("message").value,
+	})
+		.then(function (message) {
+		alert("Confessed Succesfully")
+		});
+	}
+</script>
+</head>
+<body>
+	<div class="mained">
+    <form class="form" onsubmit="sendEmail(); reset(); return false;">
+		<img src="vp11-removebg-preview.png" alt="">
+		<p>CONFESSIONS</p>
+		<h6>Your Confessions will be not take your name,
+			They are end-to-end encrypted
+		</h6>
+		<h6>we do not record any of your data</h6>
+		<input type="text" id="name" placeholder="Class (Not Mandatory)">
+		<textarea id="message" rows="5" placeholder="Confess Here" required=" "></textarea>
+		<form method="post" class="button22">
+			<input type="button" value="Confess It"
+				onclick="sendEmail()" />
+		</form>
+	</form>
+	<a href="">You can get Confessions by clicking here</a>
+	</div>
+</body>
+</html>

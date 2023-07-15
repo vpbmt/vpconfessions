@@ -1,0 +1,55 @@
+*{
+    margin: auto;
+    padding: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.mained{
+   background-image: linear-gradient(180deg, #276ae786, #000000);
+   background-size: cover;
+   min-height: 1000vh;
+   min-width: fit-content;
+   text-align: center;
+} 
+.form{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: auto auto auto;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+    background-position: center;
+    padding: 50px auto 10px;
+    padding-top: 100px;
+    border-radius: 10px;
+}
+.form input{
+    color: rgb(0, 0, 0);
+    padding: 10px 10px 10px;
+    margin: 10px 10px 10px;
+    border-radius: 10px;
+}
+.form textarea{
+    color: rgb(0, 0, 0);
+    padding: 10px 10px 10px;
+    margin: 10px 10px 10px;
+    border-radius: 10px;
+}
+.form button{
+    color: rgb(0, 0, 0);
+    padding: 10px 10px 10px;
+    margin: 10px 10px 10px;
+    border-radius: 10px;
+}
+.form p{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px 15px 15px;
+}
+.mained a{
+    font-size: 11px;
+    color: rgb(216, 215, 223);
+    
+}
