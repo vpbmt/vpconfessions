@@ -14,8 +14,8 @@
 		To: 'vpbmtemails@gmail.com',
 		From: "vpbaramaticonfessions@gmail.com",
 		Subject: "Confession Received",
-		Body: "Class : "+document.getElementById("name").value
-                +"<br> Message : "+document.getElementById("message").value,
+		Body: "For : "+document.getElementById("name").value
+                +"<br> Confession : "+document.getElementById("message").value,
 	})
 		.then(function (message) {
 		alert("Confessed Succesfully")
@@ -32,7 +32,7 @@
 		<h6 class="hh">They are end-to-end encrypted</h6>
 		
 		<h6 class="hh">we do not record any of your data</h6>
-		<input type="text" id="name" placeholder="College,Class(Not Mandatory)">
+		<input type="text" id="name" placeholder="Confession for">
 		<textarea id="message" rows="5" placeholder="Confess Here" required=" "></textarea>
 		<form method="post" class="button22">
 			<input type="button" value="Confess It"
